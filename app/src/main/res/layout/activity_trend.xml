@@ -1,11 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".TrendActivity">
+        tools:context=".TrendActivity"
+        android:orientation="vertical">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_layout"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_rise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="상승률"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_rise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_layout"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_trade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="거래량"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_trade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_layout"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_cap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="시가총액"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_layout"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주요 환율"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </layout>
